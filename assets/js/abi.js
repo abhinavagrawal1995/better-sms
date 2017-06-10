@@ -109,7 +109,7 @@ var sendSMS = function(key,otp) {
 		timestamp: new Date().toLocaleString()
     });
 	window.alert("Your Message has been sent succesfully")
-	goback()
+	$('#finalSend').prop('disabled',true)
 }
 
 
