@@ -1,0 +1,33 @@
+{
+	"0" : {
+		"firstName" : "Albus",
+		"lastName" : "Dumbledore",
+		"number" : "9999999999"
+	},
+	"1" : {
+		"firstName" : "Harry",
+		"lastName" : "Potter",
+		"number" : "4554563543"
+	},
+	"2" : {
+		"firstName" : "Ron",
+		"lastName" : "Weasley",
+		"number" : "5461154345"
+	},
+	"3" : {
+		"firstName" : "Hermionie",
+		"lastName" : "Granger",
+		"number" : "4536515154"
+	},
+	"4" : {
+		"firstName" : "Neville",
+		"lastName" : "Longbottom",
+		"number" : "4531515445"
+	},
+	"5" : {
+		"firstName" : "Luna",
+		"lastName" : "Lovegood",
+		"number" : "5354515145"
+	}
+	
+}

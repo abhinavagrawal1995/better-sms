@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BetterSMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><button onclick="goback()" class="button icon fa-arrow-left">  Back</a></h1>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<section id="cta">
+					<p>
+						<h2 id="cname">Unknown Contact</h2>
+						<h3 id="cnumber"></h3>
+					</p>
+
+					<ul class="actions">
+						<li><button onclick="goback()" class="button">Go Back</a></li>
+						<li><button id="sendit" onclick="showform()" class="button" disabled>Send Message</button></li>
+					</ul>
+
+				</section>
+
+
+				<section class="box" id="smsform">
+					<h3>Enter Text to send</h3>
+					<form>						
+						<div class="row uniform 50%">
+							<div class="12u">
+								<textarea name="message" id="messagebody" rows="6"></textarea>
+							</div>
+						</div>
+						<div class="row uniform">
+							<div class="12u">
+								<ul class="actions">
+									<li><input type="button" value="Send" id="finalSend"/></li>
+								</ul>
+							</div>
+						</div>
+						<input type="hidden" name="mkey" id="mkey">
+						<input type="hidden" name="motp" id="motp">
+					</form>
+				</section>
+
+
+
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/abhinavagrawal1995" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.facebook.com/abi.agrawal1995" class="icon fa-facebook"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>Site by: <a href="http://abhinavagrawal.in">Abhinav Agrawal</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyBYFVEWpFS1a_R6XT94UQpuXe8S7myiWto",
+			    authDomain: "sms-app-34221.firebaseapp.com",
+			    databaseURL: "https://sms-app-34221.firebaseio.com",
+			    projectId: "sms-app-34221",
+			    storageBucket: "sms-app-34221.appspot.com",
+			    messagingSenderId: "731772059708"
+			  };
+			  firebase.initializeApp(config);
+			  
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/abi.js"></script>
+			
+			<script>
+				loadContacts(setInfo,getParameterByName("key"))
+			</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BetterSMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">BetterSMS</a></h1>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					<h2>BetterSMS</h2>
+					<p>Get smart. Get Better.</p>
+					<ul class="actions">
+						<li><a href="index.html" class="button">PhoneBook</a></li>
+						<li><a href="logs.html" class="button">Logs</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<section class="box special">
+						<header class="major">
+							<h2>SMS History</h2>
+							<p>This is a log of all sent messages.</p>
+						</header>
+					</section>
+					<div class="logs row">
+						sddf
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://github.com/abhinavagrawal1995" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.facebook.com/abi.agrawal1995" class="icon fa-facebook"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>Site by: <a href="http://abhinavagrawal.in">Abhinav Agrawal</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>	
+			<script>
+			  // Initialize Firebase
+			  var config = {
+			    apiKey: "AIzaSyBYFVEWpFS1a_R6XT94UQpuXe8S7myiWto",
+			    authDomain: "sms-app-34221.firebaseapp.com",
+			    databaseURL: "https://sms-app-34221.firebaseio.com",
+			    projectId: "sms-app-34221",
+			    storageBucket: "sms-app-34221.appspot.com",
+			    messagingSenderId: "731772059708"
+			  };
+			  firebase.initializeApp(config);
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/abi.js"></script>
+			<script>
+			  loadContacts(loadLogs)
+			</script>
+	</body>
+</html>
