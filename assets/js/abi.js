@@ -5,7 +5,7 @@ var loadLogs = function() {
 	firebase.database().ref('/sms').once('value').then(function(snapshot) {
 	  rawLogsData = snapshot.val()
 	  var logs = []
-	  Object.keys(rawLogsData).forEach(function(key) {
+	  	  Object.keys(rawLogsData).forEach(function(key) {
 	      logs.push(rawLogsData[key]);
 	  });
 	  showLogs(logs)
@@ -108,6 +108,8 @@ var sendSMS = function(key,otp) {
 		message: $('#messagebody').val(),
 		timestamp: new Date().toLocaleString()
     });
+	window.alert("Your Message has been sent succesfully")
+	goback()
 }
 
 
