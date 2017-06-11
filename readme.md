@@ -1,5 +1,7 @@
 Frontend - HTML/CSS/JS
+
 The site is hosted on github-pages using Jekyll.
+
 Database - Firebase
 
 I chose Github-pages since it is the most reliable and secure free hosting service I have come across.
